@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+    <link rel="stylesheet" href="contact.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){}){
+        $(".btn").click(function(){
+          $(".input, .textarea").val("");
+        })
+      }
+    </script>
+  </head>
+  <body>
+    <!-- <form action="https://www.google.com/" method="post" id="form"> -->
+    <div class="main">
+      <h2 class="title">Contact Us</h2>
+      <div class="items">
+        <label for="fname" class="label">First Name</label>
+        <input type="text" class="textare" name="fname" id="fname" />
+      </div>
+      <div class="items">
+        <label for="sname" class="label">Second Name</label>
+        <input type="text" class="textare" name="sname" id="sname" />
+      </div>
+      <div class="items">
+        <label for="adress" class="label">Adress</label>
+        <input type="text" class="textare" name="adress" id="adress" />
+      </div>
+      <div class="items">
+        <label for="phonenumber" class="label">Phone Number</label>
+        <input
+          type="number"
+          class="textare"
+          name="phonenumber"
+          id="phonenumber"
+        />
+      </div>
+      <div class="items">
+        <input type="checkbox" class="textare" name="Checkbox" id="tc" />
+        <label for="tc" class="tc"> Accept Terms and conditions</label>
+      </div>
+      <div class="btn">SEND</div>
+    </div>
+  </body>
+</html>
