@@ -7,6 +7,8 @@ body {
   background-color: rgb(186, 184, 203);
   background-image: url("Images/Road1.jpg");
 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   background-size: cover;
   width: 100%;
   height: 100vh;

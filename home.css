@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+  font-size: 25px;
+  display: grid;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    "sidebarL main main sidebarR"
+    "sidebarL main main sidebarR"
+    "bottom bottom bottom bottom";
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-template-rows: 1fr 5fr 4fr 1fr;
+  height: 99vh;
+
+  gap: 5px;
+  margin: 5px;
+}
+.container div {
+  border-radius: 10px;
+  /* border: 2px solid; */
+}
+.navbar {
+  grid-area: navbar;
+  display: flex;
+  margin: auto;
+  border: 2px solid;
+}
+.navbar p:hover {
+  font-size: 27px;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.sidebarL {
+  grid-area: sidebarL;
+  display: flex;
+  margin: auto;
+}
+.main {
+  grid-area: main;
+  display: flex;
+  margin: auto;
+}
+.sidebarR {
+  grid-area: sidebarR;
+  display: inline-block;
+}
+.bottom {
+  grid-area: bottom;
+  width: 400px;
+}
+.bottom:hover {
+  font-size: 26px;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.fa-github {
+  color: black;
+}
+.fa-google {
+  color: black;
+}
+.fa-instagram {
+  color: black;
+}
+.fa-facebook {
+  color: black;
+}
+.conainer .navbar a i {
+  background-color: black;
+  border: 2px solid;
+}

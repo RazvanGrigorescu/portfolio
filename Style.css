@@ -60,3 +60,22 @@ ul li {
 }
 body {
 }
+
+.description {
+  position: relative;
+  width: 400px;
+  margin: auto;
+  animation-name: mymove;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+  from {
+    top: -800px;
+  }
+  to {
+    top: 0px;
+  }
+}
